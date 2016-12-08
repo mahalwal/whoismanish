@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<head>
+    <style>
+    .mySlides {display:none}
+    	body{
+    		height:900px;
+    	}
+    	.body-initial { 
+            background-image:url(manish.jpg);
+            width: 100%;
+            background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+            
+        }
+        .tst1 {
+            min-height: 100px; 
+            top: 100px; 
+            left: 100px; 
+        }
+        .tst2 {
+            min-height: 100px; 
+            top: 0px;
+            left: 0px;
+            width: 856px; 
+        }
+        .tst3 {
+            width: 1366px;
+            top: -2px;
+            left: -106px;
+            min-height: 36px;
+        }
+    </style>
+    <title>manish</title>
+</head>
+<div class="w3-container">
+                    <ul class="w3-navbar w3-border w3-left w3-light-grey">
+                        <li><a class="w3-hover-red" href="index.html">Home</a></li>
+                        <li><a class="w3-hover-blue" href="aboutme.html">About Me</a></li>
+                        <li><a class="w3-hover-green" href="https://mahalwal.wordpress.com">Blog</a></li>    
+                        <li><a class="w3-hover-teal" href="finalestcv.pdf">CV</a></li>
+                        <li><a class="w3-hover-blue" href="contactme.html">Contact Me</a></li>
+                    </ul>
+   
+
+</div>
+
+<body id="body-initial" class="body-initial" >
+    
+            <div id="tst3" class="tst3" type="text">
+                <div>
+                    <center><div style="text-align: center;"><font color="black" size="10">whoismanish</font></div></center>
+                    <div style="text-align: center;"><font color="white" size="4"><br></font></div>
+                    <div style="text-align: center;"><font color="white" size="4"><br></font></div>
+                    <div style="text-align: center;"><font color="white" size="4"><br></font></div>
+                    <div style="text-align: center;"><font color="white" size="4"><br></font></div>
+                    <div style="text-align: center;"><font color="white" size="2"><br></font></div>
+                    <div style="text-align: center;"><font color="white" size="6"><font color="red">About</font> Me</font></div>
+                    <hr width="100px" color="black">
+                    <div style="text-align: center;"><font color="white" size="4">I am currently studying at IIIT Delhi, doing my major in Computer Science.</font></div>
+                    <div style="text-align: center;"><font color="white" size="4">I love to explore my areas.</font></div>
+                    <div style="text-align: center;"><font color="white" size="4">I like playing Table Tennis and working on my laptop.</font></div>
+                    <div style="text-align: center;"><font color="white" size="4"><br>Want to know how thoughtful I am? Check out my personal blog <a href="https://wordpress.com">here</a></font></div>
+                    <div style="text-align: center;"><font color="black" size="4"><br></font></div>
+                    <div style="text-align: center;">
+                    </div>
+                    <div style="text-align: center;"><font color="white" size="4"><br></font></div>
+    <div class="w3-container">
+     <div class="w3-row-padding" style="margin:0 -16px">
+  <div class="w3-col s4">
+    <img src="photofb.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  </div>
+  <div class="w3-col s4">
+    <img src="bhu.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  </div>
+  <div class="w3-col s4">
+    <img src="guitar.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">&times;</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1200px">
+   <img class="mySlides" src="photofb.jpg" style="width:100%">
+   <img class="mySlides" src="bhu.jpg" style="width:100%">
+   <img class="mySlides" src="guitar.jpg" style="width:100%">
+   <div class="w3-row w3-black w3-center">
+    <div class="w3-container w3-display-container">
+     <p id="caption"></p>
+     <span class="w3-display-left w3-btn-floating" onclick="plusDivs(-1)">&#10094;</span>
+     <span class="w3-display-right w3-btn-floating" onclick="plusDivs(1)">&#10095;</span>
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="photofb.jpg" style="width:100%" onclick="currentDiv(1)" alt="Farewell '16">
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="bhu.jpg" style="width:100%" onclick="currentDiv(2)" alt="IIT-BHU Contingent">
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="guitar.jpg" style="width:100%" onclick="currentDiv(3)" alt="Table Tennis Boys">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</div>
+                    <hr width="100px" color="red">  
+                    <div style="text-align: center;"><font color="white" size="4"><br><a href="https://www.instagram.com/mahalwalmanish/"><img src="instagramg.png" alt="Mail1" width="50px" height="50px"></a><a href ="https://www.facebook.com/mahalwalm"><img src="facebookg.png" alt="Mail1" width="50px" height="50px"></a><a href="https://twitter.com/ManishMahalwal2"><img src="twitterg.png" alt="Mail1" width="50px" height="50px"></a><a href="mailto:mansih16054@iiitd.ac.in"><img src="gmailg2.png" alt="Mail1" width="50px" height="50px"></a><a href="https://github.com/mahalwal"><img src="git2.svg" alt="Mail1" width="50px" height="50px"></a></font></div>
+                    <hr width="100px" color="red">
+                    <div style="text-align: center;"><font color="black" size="6">Made with<font color="red"> ❤</font> in A-503</font></div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
